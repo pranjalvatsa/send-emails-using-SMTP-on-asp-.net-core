@@ -14,7 +14,7 @@ using MailKit.Net.Smtp;
         }
         
         
-        //Action method called on click on submit button on View
+        //Action method called on click of submit button on View
         [HttpPost]
         public async Task<IActionResult> Index(IFormCollection formData)
         {
