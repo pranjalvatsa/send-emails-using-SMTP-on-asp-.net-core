@@ -6,7 +6,8 @@ using MailKit.Net.Smtp;
   public class HomeController : Controller
     {
         private EmailSettingsMetaData _emailMetaData;
-
+        
+        //Inject Email Settings Meta Data into the controller
         public HomeController(EmailSettingsMetaData emailData)
         {
             _emailMetaData = emailData;
