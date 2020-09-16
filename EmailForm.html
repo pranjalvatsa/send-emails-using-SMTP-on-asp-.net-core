@@ -1,1 +1,18 @@
+<!-- Form to capture user information and send an email to website admin on click of Submit button -->
+ <div class="form_info">
+                    <div class="form_reserv">
+                        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            <form>
+                                <input placeholder="Name" type="text" name="name" required="">
+                                <input placeholder="Email" type="email" name="email" required="">
+                                <input placeholder="Phone" type="text" name="phone" required="">
 
+                                <textarea placeholder="Message" type="message" name="message" required=""></textarea>
+                                <button type="submit" class="button_line">Submit</button>
+                            </form>
+                        }
+                    </div>
+
+                </div>
+            </div>
